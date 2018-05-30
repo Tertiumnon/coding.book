@@ -16,6 +16,11 @@ sudo apt-get install nginx
 listen = 127.0.0.1:9005
 ```
 
+```bash
+#!/bin/bash
+sudo service php7.2-fpm restart
+```
+
 ## Site config
 
 ```nginx
