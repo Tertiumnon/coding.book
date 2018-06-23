@@ -1,3 +1,3 @@
-# TERTIUM Coding Book
+# TERTIUM CODE BOOK
 
-Code recipes
+My articles about technologies and how-to.
