@@ -131,7 +131,7 @@ export default function add (a,b) {
 };
 
 // numbers.js
-export const number1 = 3;1
+export const number1 = 3;
 export const number2 = 5;
 
 // whatever.js
