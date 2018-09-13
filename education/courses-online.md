@@ -15,7 +15,7 @@
 
 ### Computer Science Video
 
-* Harvard: [CS50](https://www.youtube.com/watch?v=Sy_wba7l1UU&list=PLawfWYMUziZqyUL5QDLVbe3j5BKWj42E5)
+* Harvard: [CS50](https://www.youtube.com/watch?v=Sy_wba7l1UU&list=PLawfWYMUziZqyUL5QDLVbe3j5BKWj42E5) [RU]
 
 ## PHP
 
@@ -33,11 +33,6 @@
 ### JavaScript Courses
 
 * Udacity: [JavaScript Testing](https://www.udacity.com/course/javascript-testing--ud549)
-
-### JavaScript Guides
-
-* javascript.ru (RU): [Современный учебник Javascript](https://learn.javascript.ru)
-* MDN: [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
 ## Data Science
 

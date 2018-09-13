@@ -14,8 +14,10 @@
 
 ## JavaScript
 
+* [MDN: JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [Speaking JavaScript](http://speakingjs.com/es5/index.html)
+* [Современный учебник Javascript](https://learn.javascript.ru) [RU]
 
 ## HTML
 
