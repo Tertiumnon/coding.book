@@ -24,8 +24,8 @@
 
 ### Web Development Courses
 
-* [HTML5 Canvas](https://www.udacity.com/course/html5-canvas--ud292)
-* [Intro to Backend](https://www.udacity.com/course/intro-to-backend--ud171)
+* Udacity: [HTML5 Canvas](https://www.udacity.com/course/html5-canvas--ud292)
+* Udacity: [Intro to Backend](https://www.udacity.com/course/intro-to-backend--ud171)
 
 ## Databases
 
@@ -59,7 +59,7 @@
 
 ### Python Courses
 
-* [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036)
+* Udacity: [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036)
 
 ## Data Science
 
