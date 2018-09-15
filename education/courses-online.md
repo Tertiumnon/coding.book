@@ -22,14 +22,14 @@
 
 ## Web Development
 
-## Web Development Courses
+### Web Development Courses
 
 * [HTML5 Canvas](https://www.udacity.com/course/html5-canvas--ud292)
 * [Intro to Backend](https://www.udacity.com/course/intro-to-backend--ud171)
 
 ## Databases
 
-## Databases Courses
+### Databases Courses
 
 * Udacity: [Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
 
