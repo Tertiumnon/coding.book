@@ -4,20 +4,20 @@
 
 Install:
 
-```Bash
+```bash
 sudo apt-get install openssh-server
 sudo service ssh start
 ```
 
 Edit config:
 
-```Bash
+```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
 /etc/ssh/sshd_config:
 
-```File
+```text
 Port 22
 PermitRootLogin no
 AllowUsers yourusername
@@ -27,6 +27,6 @@ UsePrivilegeSeparation no
 
 Restart:
 
-```Bash
+```bash
 sudo service ssh --full-restart
 ```
