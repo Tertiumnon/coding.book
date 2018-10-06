@@ -47,7 +47,7 @@ sudo apt-get install mysql-server mysql-client
 
 ### CREATE USER
 
-```SQL
+```sql
 CREATE USER 'user_name'@'localhost'
 IDENTIFIED WITH mysql_native_password BY 'password';
 GRANT ALL PRIVILEGES ON database_name.* TO 'user_name'@'localhost' WITH GRANT OPTION;
@@ -55,25 +55,25 @@ GRANT ALL PRIVILEGES ON database_name.* TO 'user_name'@'localhost' WITH GRANT OP
 
 ### ADD COLUMN primary key
 
-```SQL
+```sql
 ALTER TABLE table_name ADD id INT NOT NULL PRIMARY KEY AUTO_INCREMENT;
 ```
 
 ### ADD COLUMN first
 
-```SQL
+```sql
 ALTER TABLE table_name ADD id INT NOT NULL PRIMARY KEY AUTO_INCREMENT FIRST;
 ```
 
 ### ADD COLUMN after
 
-```SQL
-ALTER TABLE table_name ADD title VARCHAR AFTER id;
+```sql
+ALTER TABLE table_name ADD col_name_n VARCHAR AFTER col_name_1;
 ```
 
 ### ADD categories
 
-```SQL
+```sql
 CREATE TABLE person (
 `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 `name` VARCHAR(50)
@@ -94,7 +94,7 @@ PRIMARY KEY(`person_id`, `fruit_name`)
 
 Retriving:
 
-```SQL
+```sql
 SELECT p.*, f.*
 FROM person p
 INNER JOIN person_fruit pf
@@ -105,15 +105,40 @@ ON f.fruit_name = pf.fruit_name
 
 ### ADD COLUMN value from another column
 
-```SQL
-SELECT title, options, SUBSTR(options,13,5) AS options_new FROM table_name;
+```sql
+SELECT col_name_1, col_name_2, SUBSTR(options,13,5) AS options_new FROM table_name;
 ```
 
 ### SELECT with REGEXP
 
-```SQL
-SELECT productname FROM products WHERE productname REGEXP '^(A|B|C)';
+```sql
+SELECT col_name FROM table_name WHERE col_name REGEXP '^(A|B|C)';
 ```
 
-* [MySQL regexp 5.7](https://dev.mysql.com/doc/refman/5.7/en/regexp.html)
-* [MySQL regexp 8.0](https://dev.mysql.com/doc/refman/8.0/en/regexp.html)
+- [MySQL regexp 5.7](https://dev.mysql.com/doc/refman/5.7/en/regexp.html)
+- [MySQL regexp 8.0](https://dev.mysql.com/doc/refman/8.0/en/regexp.html)
+
+### UPDATE COLUMN with SUBSTRING (remove last char)
+
+```sql
+UPDATE table_name SET col_name = SUBSTRING(col_name FROM 1 FOR CHAR_LENGTH(ref_id) - 1);
+```
+
+## MySQL upgrade from 5.7 to 8.0
+
+```bash
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
+sudo apt install mysql-server
+mysql_upgrade -u root -p
+```
+
+### MySQL upgrade errors
+
+#### Can't find mysql.infoschema
+
+```bash
+mysql -u root -p
+mysql> SET GLOBAL innodb_fast_shutdown = 1;
+sudo mysql_upgrade -u root -p
+```

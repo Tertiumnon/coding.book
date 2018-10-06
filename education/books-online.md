@@ -17,20 +17,34 @@
 * [MDN: JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
-* [Speaking JavaScript](http://speakingjs.com/es5/index.html)
-* [Современный учебник Javascript](https://learn.javascript.ru) [RU]
+* Dr. Axel Rauschmayer [Exploring ES6](http://exploringjs.com/es6/index.html)
+* Dr. Axel Rauschmayer [JavaScript for impatient programmers](http://exploringjs.com/impatient-js/toc.html)
+* Dr. Axel Rauschmayer [Speaking JavaScript](http://speakingjs.com/es5/index.html)
+
+### JavaScript [RU]
+
+* [Современный учебник Javascript](https://learn.javascript.ru)
 
 ## NodeJS
 
 * [The definitive Node.js handbook](https://medium.freecodecamp.org/the-definitive-node-js-handbook-6912378afc6e)
+* [Mixu's Node book](http://book.mixu.net/node/)
 
 ## HTML
 
 * [HTML Canvas Deep Dive](https://joshondesign.com/p/books/canvasdeepdive/toc.html)
 
+## CSS
+
+* [Learn CSS Layout](http://book.mixu.net/css/)
+
 ## SVG
 
 * [Pocket Guide to Writing SVG](http://svgpocketguide.com/book/)
+
+## Maching Learning
+
+* Dr. Axel Rauschmayer [Exploring ReasonML and functional programming](http://reasonmlhub.com/exploring-reasonml/)
 
 ## Game Development
 
