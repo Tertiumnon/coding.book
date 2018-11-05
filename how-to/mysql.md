@@ -17,17 +17,14 @@ sudo apt-get install mysql-server mysql-client
 | title            | VARCHAR(255)  |                                                                                   |
 | full name        | VARCHAR(70)   |                                                                                   |
 | gender           | TINYINT       | UNSIGNED                                                                          |
-| description      | TINYTEXT      | often may not be enough, use TEXT
-                                     instead
+| description      | TINYTEXT      | often may not be enough, use TEXT  instead                                        |
 | post body        | TEXT          |                                                                                   |
 | email            | VARCHAR(255)  |                                                                                   |
 | url              | VARCHAR(2083) | MySQL version < 5.0.3 - use TEXT                                                  |
-| salt             | CHAR(x)       | randomly generated string, usually of
-                                     fixed length (x)
+| salt             | CHAR(x)       | randomly generated string, usually of fixed length (x)                            |
 | digest (md5)     | CHAR(32)      |                                                                                   |
 | phone number     | VARCHAR(20)   |                                                                                   |
-| US zip code      | CHAR(5)       | Use CHAR(10) if you store extended
-                                     codes
+| US zip code      | CHAR(5)       | Use CHAR(10) if you store extended codes                                          |
 | US/Canada p.code | CHAR(6)       |                                                                                   |
 | file path        | VARCHAR(255)  |                                                                                   |
 | 5-star rating    | DECIMAL(3,2)  | UNSIGNED                                                                          |

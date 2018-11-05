@@ -13,12 +13,13 @@
 
 ### Computer Science Courses
 
+* edX: [CS50. Introduction to Computer Science](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x)
 * Udacity: [Intro to Computer Science](https://www.udacity.com/course/intro-to-computer-science--cs101)
 * Udacity: [Intro to Algorithms](https://www.udacity.com/course/intro-to-algorithms--cs215)
 
 ### Computer Science Video
 
-* Harvard: [CS50](https://www.youtube.com/watch?v=Sy_wba7l1UU&list=PLawfWYMUziZqyUL5QDLVbe3j5BKWj42E5) [RU]
+* JavaRush: [CS50](https://www.youtube.com/watch?v=Sy_wba7l1UU&list=PLawfWYMUziZqyUL5QDLVbe3j5BKWj42E5) [RU]
 
 ## Web Development
 
@@ -48,6 +49,7 @@
 
 ### JavaScript Courses
 
+* edX: [CS50's Web Programming with Python and JavaScript](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript)
 * Udacity: [Intro to JavaScript](https://www.udacity.com/course/intro-to-javascript--ud803)
 * Udacity: [Object-Oriented JavaScript](https://www.udacity.com/course/object-oriented-javascript--ud015)
 * Udacity: [ES6 - JavaScript Improved](https://www.udacity.com/course/es6-javascript-improved--ud356)
@@ -57,8 +59,13 @@
 
 ## Python
 
+### Python Nanodegree's
+
+* Coursera: [Программирование на Python Specialization](https://www.coursera.org/specializations/programming-in-python) [RU]
+
 ### Python Courses
 
+* edX: [CS50's Web Programming with Python and JavaScript](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript)
 * Udacity: [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036)
 
 ## Data Science
@@ -79,5 +86,6 @@
 
 ### Unity Courses
 
+* edX: [CS50's Introduction to Game Development](https://www.edx.org/course/cs50s-introduction-to-game-development)
 * Udacity: [VR Software Development](https://www.udacity.com/course/vr-software-development--ud1014)
 * Udacity: [Learn ARKit using Unity](https://www.udacity.com/course/learn-arkit-using-unity--ud114)
