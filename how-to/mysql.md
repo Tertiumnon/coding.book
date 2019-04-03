@@ -3,6 +3,7 @@
 ## Installation
 
 ```bash
+# Ubuntu
 #!/bin/bash
 sudo apt-get install mysql-server mysql-client
 ```
@@ -42,12 +43,18 @@ sudo apt-get install mysql-server mysql-client
 
 ## Recipes
 
+### CREATE DATABASE
+
+```sql
+CREATE DATABASE database_name CHARACTER SET UTF8mb4 COLLATE utf8mb4_bin;
+```
+
 ### CREATE USER
 
 ```sql
-CREATE USER 'user_name'@'localhost'
-IDENTIFIED WITH mysql_native_password BY 'password';
-GRANT ALL PRIVILEGES ON database_name.* TO 'user_name'@'localhost' WITH GRANT OPTION;
+CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON database_name.* TO 'user_name'@'localhost';
+FLUSH PRIVILEGES;
 ```
 
 ### ADD COLUMN primary key
