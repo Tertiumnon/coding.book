@@ -43,10 +43,20 @@ sudo apt-get install mysql-server mysql-client
 
 ## Recipes
 
-### CREATE DATABASE
+### DATABASE
+
+#### CREATE DATABASE
 
 ```sql
 CREATE DATABASE database_name CHARACTER SET UTF8mb4 COLLATE utf8mb4_bin;
+```
+
+#### IMPORT DATABASE
+
+##### Import database from archive
+
+```sql
+gunzip < database.sql.gz | mysql -u user_name -p database_name
 ```
 
 ### CREATE USER
