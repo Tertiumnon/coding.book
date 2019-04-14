@@ -67,22 +67,30 @@ GRANT ALL PRIVILEGES ON database_name.* TO 'user_name'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
-### ADD COLUMN primary key
+### COLUMNS
+
+#### ADD COLUMN primary key
 
 ```sql
 ALTER TABLE table_name ADD id INT NOT NULL PRIMARY KEY AUTO_INCREMENT;
 ```
 
-### ADD COLUMN first
+#### ADD COLUMN first
 
 ```sql
 ALTER TABLE table_name ADD id INT NOT NULL PRIMARY KEY AUTO_INCREMENT FIRST;
 ```
 
-### ADD COLUMN after
+#### ADD COLUMN after
 
 ```sql
 ALTER TABLE table_name ADD col_name_n VARCHAR AFTER col_name_1;
+```
+
+#### RENAME COLUMN
+
+```sql
+ALTER TABLE table_name CHANGE COLUMN old_name new_name [column_definition];
 ```
 
 ### ADD categories
