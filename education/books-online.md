@@ -15,7 +15,9 @@
 ## JavaScript
 
 * [MDN: JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-* [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+* [JavaScript Algorithms and Data Structures](https://github.com/trekhleb/javascript-algorithms)
+* Oleksii Trekhleb [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+* Kyle Simpson [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * Dr. Axel Rauschmayer [Exploring ES6](http://exploringjs.com/es6/index.html)
 * Dr. Axel Rauschmayer [JavaScript for impatient programmers](http://exploringjs.com/impatient-js/toc.html)
