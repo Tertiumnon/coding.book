@@ -6,6 +6,7 @@
 
 ### Google
 
+* [30 Seconds of Interviews](https://github.com/30-seconds/30-seconds-of-interviews)
 * [Refresh Your Resume](https://www.udacity.com/course/refresh-your-resume--ud243)
 * [Optimize Your GitHub](https://www.udacity.com/course/optimize-your-github--ud247)
 * [Как попасть в Google: инструкция по подготовке](https://tproger.ru/articles/work-in-google/) [RU]

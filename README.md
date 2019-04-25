@@ -1,3 +1,7 @@
 # TERTIUM CODE BOOK
 
-My articles about technologies and how-to.
+Hello, %username%. You are welcome on my page!
+
+This is my collection of HOW-TO && HOW-DO.
+
+It'all about programming.
