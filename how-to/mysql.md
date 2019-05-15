@@ -67,6 +67,20 @@ CREATE DATABASE database_name CHARACTER SET UTF8mb4 COLLATE utf8mb4_bin;
 
 #### IMPORT DATABASE
 
+##### Extract and import "db_name"
+
+```sql
+sed -n '/^-- Current Database: `db_name`/,/^-- Current Database: `/p' alldatabases.sql > db_name.sql
+```
+
+```sql
+mysql -D db_name -o db_name < all_databases.sql
+```
+
+```sql
+mysql -u db_user -p --one-database db_name < all_databases.sql
+```
+
 ##### Import database from archive
 
 ```sql
@@ -104,7 +118,7 @@ ALTER TABLE table_name ADD col_name_n VARCHAR AFTER col_name_1;
 #### RENAME COLUMN
 
 ```sql
-ALTER TABLE table_name CHANGE COLUMN old_name new_name [column_definition];
+ALTER TABLE table_name CHANGE COLUMN prev_col_name new_col_name [column_definition];
 ```
 
 ### ADD categories
