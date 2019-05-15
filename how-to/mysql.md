@@ -5,7 +5,25 @@
 ```bash
 # Ubuntu
 #!/bin/bash
-sudo apt-get install mysql-server mysql-client
+sudo apt-get install mysql-server
+```
+
+## Removing
+
+```bash
+# Ubuntu
+#!/bin/bash
+sudo apt remove mysql-server
+sudo mv /var/lib/mysql /var/lib/mysql_old_backup
+sudo apt install mysql-server
+```
+
+```bash
+# CenOS
+#!/bin/bash
+sudo yum remove mysql-server
+sudo mv /var/lib/mysql /var/lib/mysql_old_backup
+sudo yum install mysql-server
 ```
 
 ## Data types
@@ -30,14 +48,10 @@ sudo apt-get install mysql-server mysql-client
 | file path        | VARCHAR(255)  |                                                                                   |
 | 5-star rating    | DECIMAL(3,2)  | UNSIGNED                                                                          |
 | price            | DECIMAL(10,2) | UNSIGNED                                                                          |
-| date (creation)  | DATE/DATETIME | usually displayed as initial date of
-                                     a post                                       |
-| date (tracking)  | TIMESTAMP     | can be used for tracking changes in a
-                                     post                                        |
+| date (creation)  | DATE/DATETIME | usually displayed as initial date of a post                                       |
+| date (tracking)  | TIMESTAMP     | can be used for tracking changes in a post                                        |
 | tags, categories | TINYTEXT      | comma separated values *                                                          |
-| status           | TINYINT(1)    | 1 – published, 0 – unpublished, … You
-                                     can also use ENUM for human-readable
-                                     values
+| status           | TINYINT(1)    | 1 – published, 0 – unpublished, … You can also use ENUM for human-readable values |
 | json data        | JSON          | or LONGTEXT
 ```
 
