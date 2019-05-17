@@ -8,7 +8,25 @@
 sudo apt-get install mysql-server
 ```
 
-## Removing
+## Configuring
+
+### Change data path
+
+```bash
+# Stop MySQL service
+sudo service mysql stop
+
+# Copy MySQL data
+sudo cp -Rp /var/lib/mysql /mnt/d/var/lib/mysql
+
+# Copy MySQL logs
+sudo cp -Rp /var/log/mysql /mnt/d/var/log/mysql
+
+# Start MySQL service
+sudo service mysql start
+```
+
+## Uninstalling
 
 ```bash
 # Ubuntu
@@ -25,6 +43,7 @@ sudo yum remove mysql-server
 sudo mv /var/lib/mysql /var/lib/mysql_old_backup
 sudo yum install mysql-server
 ```
+
 
 ## Data types
 
