@@ -2,10 +2,44 @@
 
 ## Installation
 
+### Linux
+
 ```bash
 # Ubuntu
 #!/bin/bash
 sudo apt-get install mysql-server
+```
+
+### Windows
+
+Download archive and unpack. Add bin-directory to PATH.
+
+#### Create config file
+
+```cmd
+# D:\\var\\mysql-8\\my.ini
+[mysqld]
+basedir=D:\\lib\\mysql-8
+datadir=D:\\lib\\mysql-8-data
+port=3306
+```
+
+#### Save as service
+
+```cmd
+mysqld --install
+```
+
+#### Init data
+
+```cmd
+mysqld --initialize
+```
+
+#### Run service
+
+```cmd
+mysqld --console
 ```
 
 ## Configuring
