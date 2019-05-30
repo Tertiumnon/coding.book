@@ -1,6 +1,20 @@
 # WSL (Bash on Windows)
 
-## SSH
+## Install
+
+```cmd
+lxrun /install /y
+```
+
+## Uninstall
+
+```cmd
+lxrun /uninstall /full
+```
+
+## Services
+
+### SSH
 
 Install:
 
