@@ -245,3 +245,12 @@ mysql -u root -p
 mysql> SET GLOBAL innodb_fast_shutdown = 1;
 sudo mysql_upgrade -u root -p
 ```
+
+## Troubleshooting
+
+### No directory, logging in with HOME=/
+
+```bash
+sudo usermod -d /var/lib/mysql/ mysql
+sudo service mysql start
+```
