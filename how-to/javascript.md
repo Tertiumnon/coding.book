@@ -22,3 +22,45 @@ const filtered = Object.keys(raw)
 
 console.log(filtered);
 ```
+
+### Encode and decode HTML-entities
+
+#### Decode HTML-entities
+
+```javascript
+function decodeHTMLEntities(text) {
+  var textArea = document.createElement('textarea');
+  textArea.innerHTML = text;
+  return textArea.value;
+}
+```
+
+#### Decode HTML-entities (JQuery)
+
+```jquery
+function decodeHTMLEntities(text) {
+  return $("<textarea/>")
+    .html(text)
+    .text();
+}
+```
+
+#### Encode HTML-entities
+
+```javascript
+function encodeHTMLEntities(text) {
+  var textArea = document.createElement('textarea');
+  textArea.innerText = text;
+  return textArea.innerHTML;
+}
+```
+
+#### Encode HTML-entities (JQuery)
+
+```jquery
+function encodeHTMLEntities(text) {
+  return $("<textarea/>")
+    .text(text)
+    .html();
+}
+```
