@@ -22,7 +22,5 @@
     "url": "https://github.com/Tertiumnon/tertium.coding.book/issues"
   },
   "homepage": "https://github.com/Tertiumnon/tertium.coding.book#readme",
-  "dependencies": {
-    "markdown-toc": "^1.2.0"
-  }
+  "dependencies": {}
 }
