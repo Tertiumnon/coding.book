@@ -1,6 +1,6 @@
 {
   "name": "tertium.coding.book",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "My articles about technologies and how-to.",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "books",
     "courses",
-    "programming"
+    "programming",
+    "programming languages"
   ],
   "author": "Vitaliy Balabanov",
   "license": "ISC",

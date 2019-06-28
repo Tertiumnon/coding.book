@@ -1,4 +1,4 @@
-# Courses Online
+# Coding Courses
 
 ## Computer Science
 

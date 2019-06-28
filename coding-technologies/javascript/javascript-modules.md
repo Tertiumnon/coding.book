@@ -1,8 +1,44 @@
-# JavaScript Import
+# JavaScript Modules
 
-## AMD import
+## IIFE (Immediately Invoked Function Expression)
 
-```JavaScript
+```javascript
+(function(){
+    // ...
+})()
+```
+
+## UMD (Universal Module Definition)
+
+```javascript
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD
+        define(['jquery'], factory);
+    } else if (typeof exports === 'object') {
+        // Node, CommonJS-like
+        module.exports = factory(require('jquery'));
+    } else {
+        // Browser globals (root is window)
+        root.returnExports = factory(root.jQuery);
+    }
+}(this, function ($) {
+    // methods
+    function myFunc(){};
+    // exposed public method
+    return myFunc;
+}));
+```
+
+## RequireJS / AMD (Asynchronous Module Definition)
+
+```javascript
+define(["foo"], function(foo) {
+    foo.doStuff();
+})
+```
+
+```javascript
 // add.js
 define([] , function () {
     return {
@@ -28,9 +64,19 @@ define([
 });
 ```
 
-## CommonJS import
+## NodeJS / CommonJS
 
-```JavaScript
+```javascript
+// foo.js
+function foo() {};
+module.exports = foo;
+
+// index.js
+var foo = require('foo');
+foo.doStuff();
+```
+
+```javascript
 // add.js
 module.exports = {
     add: function(a,b) {
@@ -53,7 +99,7 @@ module.exports = {
 };
 ```
 
-## ES6 import
+## ES6
 
 ```JavaScript
 // add.js

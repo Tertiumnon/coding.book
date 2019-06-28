@@ -14,7 +14,7 @@ sudo apt-get install apache2
 sudo apt-get install libapache2-mod-php7.2
 ```
 
-## Site config
+## Site configuration
 
 ```apache
 # /etc/sites-available/example.com.conf
