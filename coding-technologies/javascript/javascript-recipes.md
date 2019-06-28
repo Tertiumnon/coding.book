@@ -1,6 +1,6 @@
-# JavaScript
+# JavaScript Recipes
 
-## Recipes
+## Objects
 
 ### Filter object
 
@@ -23,9 +23,9 @@ const filtered = Object.keys(raw)
 console.log(filtered);
 ```
 
-### Encode and decode HTML-entities
+## HTML-entities
 
-#### Decode HTML-entities
+### Decode HTML-entities
 
 ```javascript
 function decodeHTMLEntities(text) {
@@ -35,7 +35,7 @@ function decodeHTMLEntities(text) {
 }
 ```
 
-#### Decode HTML-entities (JQuery)
+### Decode HTML-entities (JQuery)
 
 ```jquery
 function decodeHTMLEntities(text) {
@@ -45,7 +45,7 @@ function decodeHTMLEntities(text) {
 }
 ```
 
-#### Encode HTML-entities
+### Encode HTML-entities
 
 ```javascript
 function encodeHTMLEntities(text) {
@@ -55,7 +55,7 @@ function encodeHTMLEntities(text) {
 }
 ```
 
-#### Encode HTML-entities (JQuery)
+### Encode HTML-entities (JQuery)
 
 ```jquery
 function encodeHTMLEntities(text) {
