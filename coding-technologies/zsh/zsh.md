@@ -8,6 +8,20 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ## ZSH plugins
 
+### ZSH enable SSH agent
+
+Edit .zshrc:
+
+```text
+plugins=(... ssh-agent)
+```
+
+IMPORTANT: put these settings before the line that sources oh-my-zsh:
+
+```text
+zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa2 id_github
+```
+
 ### ZSH plugin for Visual Studio Code
 
 Edit:
