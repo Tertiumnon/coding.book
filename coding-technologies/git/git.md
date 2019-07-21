@@ -8,6 +8,16 @@ git config --global user.name "Your Name"
 git config --global core.autocrlf input # all line endings to LF
 ```
 
+## Recipes
+
+### Remove file from history
+
+```bash
+git rm --cached bad_file
+git commit --amend -CHEAD
+git push -f
+```
+
 ## Solving problems
 
 ### Unicode file names
