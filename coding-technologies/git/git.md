@@ -15,7 +15,7 @@ git config --global core.autocrlf input # all line endings to LF
 ```bash
 git rm --cached bad_file
 git commit --amend -CHEAD
-git push -f
+git push
 ```
 
 ## Solving problems
