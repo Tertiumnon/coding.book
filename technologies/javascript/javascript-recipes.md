@@ -37,7 +37,7 @@ function decodeHTMLEntities(text) {
 
 ### Decode HTML-entities (JQuery)
 
-```jquery
+```javascript
 function decodeHTMLEntities(text) {
   return $("<textarea/>")
     .html(text)
@@ -57,7 +57,7 @@ function encodeHTMLEntities(text) {
 
 ### Encode HTML-entities (JQuery)
 
-```jquery
+```javascript
 function encodeHTMLEntities(text) {
   return $("<textarea/>")
     .text(text)

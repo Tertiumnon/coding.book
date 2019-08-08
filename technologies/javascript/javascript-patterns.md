@@ -2,7 +2,7 @@
 
 ## Singleton
 
-### ES5
+### Singleton (ES5)
 
 ```javascript
 var Singleton = function() {
@@ -17,7 +17,7 @@ var Singleton = function() {
 Singleton.publicMethod();
 ```
 
-### ES6 (as module)
+### Singleton (ES6)
 
 ```javascript
 /* singleton.js */
