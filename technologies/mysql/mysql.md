@@ -101,8 +101,8 @@ sudo yum install mysql-server
 | file path        | VARCHAR(255)  |                                                                                   |
 | 5-star rating    | DECIMAL(3,2)  | UNSIGNED                                                                          |
 | price            | DECIMAL(10,2) | UNSIGNED                                                                          |
-| date (creation)  | DATE/DATETIME | usually displayed as initial date of a post                                       |
-| date (tracking)  | TIMESTAMP     | can be used for tracking changes in a post                                        |
+| date (creation)  | DATE/DATETIME | TIMESTAMP DEFAULT CURRENT_TIMESTAMP                                               |
+| date (tracking)  | TIMESTAMP     | TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP                   |
 | tags, categories | TINYTEXT      | comma separated values *                                                          |
 | status           | TINYINT(1)    | 1 – published, 0 – unpublished, … You can also use ENUM for human-readable values |
 | json data        | JSON          | or LONGTEXT
