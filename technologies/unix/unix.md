@@ -2,7 +2,7 @@
 
 ## Recipes
 
-### Disable passwords for sudoers
+### Run sudo-command without entering a password
 
 Edit:
 
@@ -13,5 +13,5 @@ sudo visudo
 Add to the end:
 
 ```bash
-$USER ALL=(ALL) NOPASSWD: ALL
+{{username}} ALL=(ALL) NOPASSWD: ALL
 ```
