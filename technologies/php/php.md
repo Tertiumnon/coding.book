@@ -42,3 +42,13 @@ https://getcomposer.org/download
 #!/bin/bash
 php -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 -dxdebug.remote_autostart=1 /path/to/script
 ```
+
+## Troubleshooting
+
+### Fatal error: Maximum execution time of 30 seconds exceeded
+
+Try to encrease parameter "max_execution_time" in php.ini:
+
+```text
+max_execution_time = 30
+```
