@@ -24,13 +24,20 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
 
-## Autoloading SSH keys
+## Create SSH aliases
+
+Create a record in ~/.ssh/config:
 
 ```bash
-# ~/.ssh/config
-Host *
-  UseKeychain yes
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/ssh_key_1
-  IdentityFile ~/.ssh/ssh_key_2
+Host targaryen
+    HostName 192.168.1.10
+    User daenerys
+    Port 22
+    IdentityFile ~/.ssh/targaryen
+```
+
+Use:
+
+```bash
+ssh targaryen
 ```
