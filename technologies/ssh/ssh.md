@@ -29,15 +29,14 @@ ssh-add ~/.ssh/id_rsa
 Create a record in ~/.ssh/config:
 
 ```bash
-Host targaryen
-    HostName 192.168.1.10
-    User daenerys
-    Port 22
-    IdentityFile ~/.ssh/targaryen
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/my_ssh_key
 ```
 
 Use:
 
 ```bash
-ssh targaryen
+git clone git@github.com:your-user/your-project.git
 ```
