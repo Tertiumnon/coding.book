@@ -1,6 +1,6 @@
 # Bash
 
-## Recipes
+## Sounds
 
 ### Disable Bash sounds
 

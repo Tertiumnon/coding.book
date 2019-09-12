@@ -12,7 +12,7 @@ Whether you’re creating a mobile app, web app, command-line script, or server,
 
 Dart is an object-oriented, class defined, single inheritance language using a C-style syntax that transcompiles optionally into JavaScript. It supports interfaces, mixins, abstract classes, reified generics, static typing and a sound type system.
 
-```Dart
+```dart
 printInteger(int aNumber) {
   print('The number is $aNumber.'); // Print to console.
 }

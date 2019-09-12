@@ -1,6 +1,8 @@
 # Git
 
-## Congiguration
+## Install
+
+### Setup user config
 
 ```bash
 git config --global user.email "you@example.com"
@@ -8,7 +10,7 @@ git config --global user.name "Your Name"
 git config --global core.autocrlf input # all line endings to LF
 ```
 
-## Recipes
+## Use
 
 ### Remove file from history
 
@@ -18,9 +20,9 @@ git commit --amend -CHEAD
 git push
 ```
 
-## Solving problems
+## Troubleshooting
 
-### Unicode file names
+### Fix Unicode file names
 
 ```bash
 git config --global core.quotePath false
