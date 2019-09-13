@@ -1,31 +1,36 @@
 # Ningx
 
-## Installation
+## Install
+
+### Install (Ubuntu)
 
 ```bash
 #!/bin/bash
 sudo apt-get install nginx
 ```
 
-## PHP-FPM
+## Use
 
-```ini
-# /etc/php/php7.2/fpm/pool.d/www.conf
+### Enable PHP-FPM
 
+Edit /etc/php/php7.2/fpm/pool.d/www.conf:
+
+```text
 ;listen = /run/php/php7.2-fpm.sock
 listen = 127.0.0.1:9005
 ```
 
+Restart:
+
 ```bash
-#!/bin/bash
 sudo service php7.2-fpm restart
 ```
 
-## Site config
+### Enable a site
 
-```nginx
-# /etc/nginx/sites-available/default
+Edit /etc/nginx/sites-available/default:
 
+```text
 server {
         listen 80 default_server;
         listen [::]:80 default_server;

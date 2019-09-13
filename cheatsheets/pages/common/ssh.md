@@ -1,12 +1,8 @@
 # SSH
 
-## SSH key generation
+## Imstall
 
-```bash
-ssh-keygen -t rsa -b 4096 -N '' -C "your@mail.com" -f ~/.ssh/id_rsa
-```
-
-## SSH keys permissions
+### Setup SSH directories and files permissions
 
 ```bash
 chmod 700 ~/.ssh
@@ -17,18 +13,11 @@ chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 ```
 
-## SSH agent
+### Create SSH aliases
 
-```bash
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-```
+Add next lines to ~/.ssh/config:
 
-## Create SSH aliases
-
-Create a record in ~/.ssh/config:
-
-```bash
+```text
 Host github.com
     HostName github.com
     User git
@@ -39,4 +28,19 @@ Use:
 
 ```bash
 git clone git@github.com:your-user/your-project.git
+```
+
+## Use
+
+### Generate SSH key
+
+```bash
+ssh-keygen -t rsa -b 4096 -N '' -C "your@mail.com" -f ~/.ssh/id_rsa
+```
+
+### Use SSH agent
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
 ```

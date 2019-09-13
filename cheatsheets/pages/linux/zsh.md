@@ -1,21 +1,22 @@
 # ZSH
 
-## Install (for current user)
+## Install ZSH
+
+### Install (for current user)
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-## Set ZSH as default shell
+### Set ZSH as default shell (CentOS)
 
 ```bash
-# CentOS
 sudo chsh -s /bin/zsh {{username}}
 ```
 
 ## ZSH plugins
 
-### ZSH enable SSH agent
+### Enable SSH agent in ZSH
 
 Edit .zshrc:
 
@@ -29,12 +30,11 @@ IMPORTANT: put these settings before the line that sources oh-my-zsh:
 zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa2 id_github
 ```
 
-### ZSH plugin for Visual Studio Code
+### Enable ZSH plugin for Visual Studio Code
 
-Edit:
+Edit ~/.zshrc:
 
 ```bash
-# ~/.zshrc
 plugins=(
   vscode
 )
@@ -43,13 +43,12 @@ plugins=(
 Run:
 
 ```bash
-# code .
 vsc
 ```
 
 [zsh-vscode](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vscode)
 
-### ZSH plugin for NVM
+### Enable ZSH plugin for NVM
 
 ```bash
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
@@ -59,7 +58,7 @@ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-
 
 ## ZSH and UTF-8
 
-Edit:
+Edit ~/.zshrc:
 
 ```bash
 export LC_ALL=en_US.UTF-8

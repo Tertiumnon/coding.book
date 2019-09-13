@@ -1,6 +1,6 @@
 # UNIX
 
-## Recipes
+## Sudo
 
 ### Run sudo-command without entering a password
 
@@ -10,8 +10,8 @@ Edit:
 sudo visudo
 ```
 
-Add to the end:
+Paste to the end of file:
 
-```bash
+```text
 {{username}} ALL=(ALL) NOPASSWD: ALL
 ```
