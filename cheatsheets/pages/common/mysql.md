@@ -1,45 +1,11 @@
 # MySQL
 
-## Installation
+## Install
 
-### Linux
+### Install (Ubuntu)
 
 ```bash
-# Ubuntu
-#!/bin/bash
 sudo apt-get install mysql-server
-```
-
-### Windows
-
-Download archive and unpack. Add bin-directory to PATH.
-
-#### Create config file
-
-```cmd
-# D:\\var\\mysql-8\\my.ini
-[mysqld]
-basedir=D:\\lib\\mysql-8
-datadir=D:\\lib\\mysql-8-data
-port=3306
-```
-
-#### Save as service
-
-```cmd
-mysqld --install
-```
-
-#### Init data
-
-```cmd
-mysqld --initialize
-```
-
-#### Run service
-
-```cmd
-mysqld --console
 ```
 
 ## Configuring
@@ -60,26 +26,29 @@ sudo cp -Rp /var/log/mysql /mnt/d/var/log/mysql
 sudo service mysql start
 ```
 
-## Uninstalling
+## Use
 
-```bash
-# Ubuntu
-#!/bin/bash
-sudo apt remove mysql-server
-sudo mv /var/lib/mysql /var/lib/mysql_old_backup
-sudo apt install mysql-server
+### Setup as a service
+
+Install:
+
+```cmd
+mysqld --install
 ```
 
-```bash
-# CenOS
-#!/bin/bash
-sudo yum remove mysql-server
-sudo mv /var/lib/mysql /var/lib/mysql_old_backup
-sudo yum install mysql-server
+Initialize:
+
+```cmd
+mysqld --initialize
 ```
 
+Run:
 
-## Data types
+```cmd
+mysqld --console
+```
+
+### Common data types
 
 ```text
 | Column           | Data type     | Note
@@ -107,8 +76,6 @@ sudo yum install mysql-server
 | status           | TINYINT(1)    | 1 – published, 0 – unpublished, … You can also use ENUM for human-readable values |
 | json data        | JSON          | or LONGTEXT
 ```
-
-## Recipes
 
 ### DATABASE
 
@@ -227,7 +194,9 @@ SELECT col_name FROM table_name WHERE col_name REGEXP '^(A|B|C)';
 UPDATE table_name SET col_name = SUBSTRING(col_name FROM 1 FOR CHAR_LENGTH(ref_id) - 1);
 ```
 
-## MySQL upgrade from 5.7 to 8.0
+## Upgrade
+
+### MySQL upgrade from 5.7 to 8.0 (Ubuntu)
 
 ```bash
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
@@ -236,9 +205,16 @@ sudo apt install mysql-server
 mysql_upgrade -u root -p
 ```
 
-### MySQL upgrade errors
+## Troubleshooting
 
-#### Can't find mysql.infoschema
+### No directory, logging in with HOME=/ (Ubuntu)
+
+```bash
+sudo usermod -d /var/lib/mysql/ mysql
+sudo service mysql start
+```
+
+### Can't find mysql.infoschema
 
 ```bash
 mysql -u root -p
@@ -246,11 +222,27 @@ mysql> SET GLOBAL innodb_fast_shutdown = 1;
 sudo mysql_upgrade -u root -p
 ```
 
-## Troubleshooting
+### Client does not support authentication protocol
 
-### No directory, logging in with HOME=/
+```mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '{{password}}';
+FLUSH PRIVILEGES;
+```
+
+## Uninstall
+
+### Uninstall (Ubuntu)
 
 ```bash
-sudo usermod -d /var/lib/mysql/ mysql
-sudo service mysql start
+sudo apt remove mysql-server
+sudo mv /var/lib/mysql /var/lib/mysql_old_backup
+sudo apt install mysql-server
+```
+
+### Uninstall (CenOS)
+
+```bash
+sudo yum remove mysql-server
+sudo mv /var/lib/mysql /var/lib/mysql_old_backup
+sudo yum install mysql-server
 ```

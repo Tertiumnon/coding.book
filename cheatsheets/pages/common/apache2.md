@@ -1,23 +1,26 @@
 # Apache2
 
-## Installation
+## Install
+
+### Install (Ubuntu)
 
 ```bash
-#!/bin/bash
 sudo apt-get install apache2
 ```
 
-### PHP
+### Install PHP mod (Ubuntu)
 
 ```bash
-#!/bin/bash
 sudo apt-get install libapache2-mod-php7.2
 ```
 
-## Site configuration
+## Use
+
+### Enable a site
+
+Edit /etc/sites-available/example.com.conf:
 
 ```apache
-# /etc/sites-available/example.com.conf
 <VirtualHost *:80>
   ServerName example.com
   DocumentRoot /var/www/example.com

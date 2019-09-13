@@ -26,7 +26,7 @@ Restart:
 sudo service php7.2-fpm restart
 ```
 
-### Enable site
+### Enable a site
 
 Edit /etc/nginx/sites-available/default:
 
