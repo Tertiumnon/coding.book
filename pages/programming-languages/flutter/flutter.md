@@ -41,7 +41,7 @@ Written primarily in C++, provides low-level rendering support using Google's Sk
 
 ### Hot reload
 
-![](images/Flutter-hot-reload.gif)
+![Flutter hot reload](images/Flutter-hot-reload.gif)
 
 ### Video
 
