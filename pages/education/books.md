@@ -4,6 +4,19 @@
 
 * [Book of Speed](http://www.bookofspeed.com/)
 
+## Web Design Systems
+
+* [BEM](https://bem.info/)
+* [Atomic Design](https://atomicdesign.bradfrost.com/)
+
+### HTML
+
+* [HTML Canvas Deep Dive](https://joshondesign.com/p/books/canvasdeepdive/toc.html)
+
+### CSS
+
+* [Learn CSS Layout](http://book.mixu.net/css/)
+
 ## GoLang
 
 * [Building Web Apps with Go](https://codegangsta.gitbooks.io/building-web-apps-with-go/index.html)
@@ -31,14 +44,6 @@
 
 * [The definitive Node.js handbook](https://medium.freecodecamp.org/the-definitive-node-js-handbook-6912378afc6e)
 * [Mixu's Node book](http://book.mixu.net/node/)
-
-## HTML
-
-* [HTML Canvas Deep Dive](https://joshondesign.com/p/books/canvasdeepdive/toc.html)
-
-## CSS
-
-* [Learn CSS Layout](http://book.mixu.net/css/)
 
 ## SVG
 
