@@ -4,15 +4,21 @@
 
 DRY - Don't repeat yourself
 
+Dynamic programming
+
 FIFO; LIFO - First in, first out; Last In, First Out.
 
 KISS - Keep it simple, stupid
 
+LRU - Last recently used (cache)
+
 SOLID - Single-responsibility, Open–closed principle, Liskov substitution principle, Interface segregation principle, Dependency inversion principle
+
+OOP - Object Oriented Programming: Encapsulation; Composition, inheritance, and delegation; Polymorphism.
 
 ## Others
 
-FAANG - Facebook, Apple, Amazon, Netflix, Google. Usually also means Microsoft, Github, Linkedin, Instagram, Snapchat, Palantir, Bloomberg, IBM. For Russian Companies: Yandex, VK, Kaspersky and JetBrains. 
+FAANG - Facebook, Apple, Amazon, Netflix, Google. Usually also means Microsoft, Github, Linkedin, Instagram, Snapchat, Palantir, Bloomberg, IBM. For Russian Companies: Yandex, VK, Kaspersky and JetBrains.
 
 LP - Leadership Principles (by Amazon)
 
@@ -44,7 +50,7 @@ CF - Codeforces
 
 OJ - Online Judge
 
-TLE - Time Limit Error 
+TLE - Time Limit Error
 
 WA - Wrong Answer
 
