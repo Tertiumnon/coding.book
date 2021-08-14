@@ -12,4 +12,4 @@ Generators, Iterators
 
 Carrying
 
-Event Loop
+Event Loop, Stack, Heap
