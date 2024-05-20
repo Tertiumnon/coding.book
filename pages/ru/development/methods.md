@@ -10,8 +10,8 @@ function getUsers() {}
 
 ```ts
 class UserService {
-  findAll() {} // find all users (using parameters or without them)
-  findOne() {} // find one user (using parameters)
+  findAll() {} // find all users (using parameters/filters or without them)
+  findUnique() {} // find unique user (using parameters/filters)
   create() {} // create user
   get() {} // get user by ID or GUID
   update() {} // update user
