@@ -44,7 +44,7 @@ But what we should return as "not found" value, if we're working with objects?
 function findUser(filters: Filter[]): User {}
 ```
 
-If you work with JS, you have `undefined` value. But when you're getting data from API, you can't get `undefined`. So, you will get `null` value. That's the reason, why I think that `null` value is more preferable.
+If you work with JS, you can use `undefined` value. But when you're getting data from API, you can't get `undefined`. So, you will get `null` value. That's the reason, why I think that `null` value is more preferable.
 
 ```ts
 function findUser(filters: Filter[]): User | null {}
