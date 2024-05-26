@@ -122,10 +122,24 @@ class UserUtility {
 }
 ```
 
-Don't create nested methods
+### Nested methods
+
+Don't create nested methods with one nested method inside - it's overcomplicated for understanding.
 
 ```ts
 function getUsers() {
   return UserService.getAll();
+}
+```
+
+Unfortunately, sometimes we need to use nested methods in cases when nested method is private.
+
+```ts
+class SomeComponent {
+  construction(private userService: UserService) {}
+
+  public getUsers() {
+    return this.userService.getAll();
+  }
 }
 ```
