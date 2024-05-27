@@ -1,28 +1,10 @@
 # Classes and methods
 
-## Method naming
+## "Find"-methods
 
-### Use "get" word, if you want to return something
+If we can't find something and return type is a primitive, we should return the same type primitive.
 
-```ts
-function getAppUser(): User {}
-```
-
-### Use "set" word, if you want to set value for something
-
-```ts
-function setAppUser(user: User): void {}
-```
-
-### Use "find" word, if you want to find something, using filters
-
-If it was not found, return `null`.
-
-```ts
-function findUser(filters: Filter[]): User | null {}
-```
-
-There are situations when, if a value is not found, a value not from expected interval is returned. For example, you will get `-1` as a value.
+For example, basic JS methods:
 
 ```ts
 "car".search("a"); // 1
@@ -30,18 +12,16 @@ There are situations when, if a value is not found, a value not from expected in
 "car".search("d"); // -1
 ```
 
-So, if we expect number, we will get a number. It's correct.
-
-If we expect string, we will get a string. It's correct too. So, if user has no last name, we will get an empty string.
+Or may be:
 
 ```ts
-function findLastName(filters: Filter[]): string {}
+function getUserLastName(user: User): string {}
 ```
 
-But what we should return as "not found" value, if we're working with objects?
+If we can't find something and return type is an object, we should return `null`.
 
 ```ts
-function findUser(filters: Filter[]): User {}
+function findUser(filters: Filter[]): User | null {}
 ```
 
 If you work with JS, you can use `undefined` value. But when you're getting data from API, you can't get `undefined`. So, you will get `null` value. That's the reason, why I think that `null` value is more preferable.
@@ -61,6 +41,39 @@ function findUsers(filters: Filter[]): User[] {}
 ```ts
 function getUsers(filters: Filter[]): User[] {}
 ```
+
+### Throwing errors in methods
+
+How do you think, are these methods correct?
+
+```ts
+// if we know that the first ID is 0
+function getUserIdByName(name: string): number {
+  return userList.find(user => user.name === name)?.id || -1;
+}
+
+function getUserNameById(id: number): string {
+  return userList.find(user => user.id === id)?.name || "";
+}
+```
+
+Let's create more correct methods!
+
+```ts
+function findUserIdByName(name: string): number {
+  const user = userList.find(user => user.name === name);
+  if (!user) throw new Error(`User with name ${name} was not found.`);
+  return user.id;
+}
+
+function findUserNameById(id: number): string {
+  const user = userList.find(user => user.id === id);
+  if (!user) throw new Error(`User with id ${id} was not found.`);
+  return user.name;
+}
+```
+
+Is that right? I don't think so.
 
 ## Method as a part of class
 
